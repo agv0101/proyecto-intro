@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "Sakana";
+    src: url(./Sakana.ttf);
+}
+:root{
+    --button-color: hsl(42, 100%, 52%);
+    --header-footer: hsl(0, 0%, 27%);
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header{
+    background-color: var(--header-footer);
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+.logo{
+    font-family: "Sakana";
+    font-size: 22px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px gray;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover{
+    color: var(--button-color); /* Cambia el color al pasar el ratón sobre los enlaces */
+}
+
+/* Presentation Section */
+.presentacion{
+    display: flex;
+    justify-content: space-between;
+}
+.text-container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.modelo{
+   padding: 20px;
+   width: 50%;
+}
+.modelo img{
+    width: 100%;
+    object-fit: cover;
+}
+.text-container p{
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+h1{
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+}
+.button-container{
+    text-align: left;
+}
+.button-pres{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Sobre mi Section */
+.sobremi-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.sobremi-foto{
+    width: 30%;
+    border: solid 2px black;
+}
+.sobremi-foto img{
+    width: 100%;
+    object-fit:cover;
+}
+.sobremi-text{
+    width: 65%;
+}
+
+.sobremi-text p{
+    margin: 15px 0;
+    color: black;
+    font-size: 22px;
+}
+.sobremi-titulo{
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+
+}
+/* Services Section */
+.services{
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-text p{
+    margin: 10px 0;
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.box{
+    flex: 1;
+    max-width: 500px;
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+
+.box span{
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box p{
+    color: white;
+}
+
+button{
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: var(--button-color); /* Cambia el color al pasar el ratón sobre los botones */
+}
+#portfolio{
+	width:100%;
+	box-sizing: border-box;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-box{
+	background-color: #1F1F1F;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+	position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.p-box img{
+    width: 100%;
+	height: 100%;
+	object-fit:fill;
+}
+.p-box:hover{
+    transform: scale(1.05);
+}
+.p-container{
+	width: 90%;
+	height:30vh;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-gap: 10px;
+}
+
+/* Contact Me Section */
+.contact-me{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.contact-me p{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-me button{
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-me button:hover{
+    background-color: var(--button-color);
+}
+
+/* Footer Section */
+footer{
+    background-color:var(--header-footer);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.footer{
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-icons{
+    width: 30%;
+}
+.contact-me{
+    width: 30%;
+    color: white;
+}
+.contact-me textarea{
+    border-radius: 8px;
+}
+.contact-me button{
+    background-color: gray;
+    padding: 10px;
+}
+.social-icons a{
+    margin: 0 15px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: var(--button-color);
+}
+
+.copyright {
+    color: #555;
+}
